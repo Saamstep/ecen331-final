@@ -1,0 +1,10 @@
+archive
+ConeTest.v1i.yolov8
+Pothole.v1-raw.yolov8
+test
+train
+valid
+.DS_Store
+*.zip
+*.txt
+*.pt

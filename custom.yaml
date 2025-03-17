@@ -1,0 +1,24 @@
+train: ./train/images
+val: ./valid/images
+test: ./test/images
+
+nc: 13
+names: ['biker', 'car', 'pedestrian', 'trafficLight', 'trafficLight-Green', 'trafficLight-GreenLeft', 'trafficLight-Red', 'trafficLight-RedLeft', 'trafficLight-Yellow', 'trafficLight-YellowLeft', 'truck', 'pothole', 'cone']
+
+roboflow:
+  datasets:
+    - workspace: roboflow-gw7yv
+      project: self-driving-car
+      version: 3
+      license: MIT
+      url: https://universe.roboflow.com/roboflow-gw7yv/self-driving-car/dataset/3
+    - workspace: brad-dwyer
+      project: pothole-voxrl
+      version: 1
+      license: ODbL v1.0
+      url: https://universe.roboflow.com/brad-dwyer/pothole-voxrl/dataset/1
+    - workspace: ethan-carlson
+      project: conetest
+      version: 1
+      license: CC BY 4.0
+      url: https://universe.roboflow.com/ethan-carlson/conetest/dataset/1
