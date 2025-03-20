@@ -1,7 +1,8 @@
 import numpy as np
 import cv2 as cv
 
-cap = cv.VideoCapture('./archive/train/0000f77c-6257be58.mov')
+# Use the default webcam (device index 0)
+cap = cv.VideoCapture(0)
 
 while cap.isOpened():
     ret, frame = cap.read()
